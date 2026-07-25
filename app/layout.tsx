@@ -63,7 +63,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
               <div>
-                <a href="/" className="inline-block mb-4" aria-label="MedReception AI">
+                <a href="https://www.medreception.ai?utm_source=getmedreception&utm_medium=outreach" className="inline-block mb-4" aria-label="MedReception AI">
                   <Image
                     src="/medreception-logo-light.png"
                     alt="MedReception AI"
