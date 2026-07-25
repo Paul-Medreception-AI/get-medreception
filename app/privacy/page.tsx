@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Get MedReception',
-  description: 'Privacy Policy for Get MedReception - How we collect, use, and protect your information.',
+  title: 'Privacy Policy | MedReception AI',
+  description: 'Privacy Policy for MedReception AI - How we collect, use, and protect your information.',
 }
 
 export default function PrivacyPage() {
@@ -18,12 +18,12 @@ export default function PrivacyPage() {
       <div className="bg-white max-w-4xl mx-auto px-6 py-16 my-12 rounded-lg shadow-sm">
         <div className="prose prose-lg max-w-none">
           <p className="text-[var(--color-muted)] text-lg leading-relaxed mb-8">
-            At Get MedReception, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+            At MedReception AI, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
 
           <h2 className="font-cormorant text-2xl text-[var(--color-ink)] mt-10 mb-4 font-semibold">Who We Are</h2>
           <p className="text-[var(--color-muted)] leading-relaxed mb-6">
-            Get MedReception provides virtual receptionist services for medical practices. We help healthcare providers manage appointment scheduling, patient inquiries, and administrative communications. Our website, getmedreception.com, serves as an informational resource and contact point for prospective clients.
+            MedReception AI provides virtual receptionist services for medical practices. We help healthcare providers manage appointment scheduling, patient inquiries, and administrative communications. Our website, getmedreception.com, serves as an informational resource and contact point for prospective clients.
           </p>
 
           <h2 className="font-cormorant text-2xl text-[var(--color-ink)] mt-10 mb-4 font-semibold">Information We Collect</h2>
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
 
           <h2 className="font-cormorant text-2xl text-[var(--color-ink)] mt-10 mb-4 font-semibold">HIPAA Notice</h2>
           <p className="text-[var(--color-muted)] leading-relaxed mb-6">
-            Get MedReception provides services to healthcare providers and may handle Protected Health Information (PHI) in the course of delivering virtual receptionist services. However, PHI is handled exclusively through secure, HIPAA-compliant systems and patient portals—never through our public website or general inquiry forms. When we act as a Business Associate under HIPAA, we maintain separate Business Associate Agreements with covered entities and implement all required safeguards for PHI handling, storage, and transmission.
+            MedReception AI provides services to healthcare providers and may handle Protected Health Information (PHI) in the course of delivering virtual receptionist services. However, PHI is handled exclusively through secure, HIPAA-compliant systems and patient portals—never through our public website or general inquiry forms. When we act as a Business Associate under HIPAA, we maintain separate Business Associate Agreements with covered entities and implement all required safeguards for PHI handling, storage, and transmission.
           </p>
 
           <h2 className="font-cormorant text-2xl text-[var(--color-ink)] mt-10 mb-4 font-semibold">Third-Party Services</h2>
@@ -115,7 +115,7 @@ export default function PrivacyPage() {
             If you have questions or concerns about this Privacy Policy or our privacy practices, please contact us:
           </p>
           <div className="bg-[var(--color-cream)] p-6 rounded-lg mb-6">
-            <p className="text-[var(--color-ink)] font-medium mb-2">Get MedReception</p>
+            <p className="text-[var(--color-ink)] font-medium mb-2">MedReception AI</p>
             <p className="text-[var(--color-muted)]">Email: privacy@getmedreception.com</p>
             <p className="text-[var(--color-muted)]">Website: getmedreception.com</p>
           </div>
@@ -136,7 +136,7 @@ export default function PrivacyPage() {
             </a>
           </div>
           <p className="text-[var(--color-muted)] text-sm">
-            © 2025 Get MedReception. All rights reserved.
+            © 2025 MedReception AI. All rights reserved.
           </p>
         </div>
       </footer>

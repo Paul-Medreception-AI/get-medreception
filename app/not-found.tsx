@@ -11,7 +11,7 @@ export default function NotFound() {
           Page Not Found
         </h1>
         <p className="text-[var(--color-muted)] mt-2 text-lg">
-          The page you're looking for doesn't exist.
+          The page you&apos;re looking for doesn&apos;t exist.
         </p>
         <div className="flex gap-4 justify-center mt-8">
           <Link
@@ -20,12 +20,12 @@ export default function NotFound() {
           >
             Go Home
           </Link>
-          <Link
-            href="/contact"
+          <a
+            href="mailto:paul@getmedreception.com"
             className="bg-white hover:bg-[var(--color-light)] text-[var(--color-primary)] px-8 py-3 rounded-lg font-semibold border border-[var(--color-border)] transition-colors"
           >
             Contact Us
-          </Link>
+          </a>
         </div>
       </div>
     </div>

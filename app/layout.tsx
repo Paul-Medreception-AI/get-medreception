@@ -1,40 +1,25 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['300','400','500','600','700'], variable: '--font-cormorant' })
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300','400','500','600'], variable: '--font-dm-sans' })
 
-
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
-
+// NOTE: This is a cold-OUTREACH domain page, not a marketing site. It must be
+// credible to a human visitor but INVISIBLE to search — an indexed cold-sending
+// domain accumulating backlinks reads as less legitimate to spam filters. So:
+// robots: noindex/nofollow, no sitemap, no analytics/pixels. Do not "SEO-optimize."
 export const metadata: Metadata = {
   metadataBase: new URL('https://getmedreception.com'),
-  title: 'Get MedReception | AI Receptionist Built by a Practicing Surgeon',
-  description: 'MedReception AI answers calls, books appointments, and never misses a patient. A physician-built solution that understands the real workflow of medical practice.',
+  title: 'MedReception AI | AI Receptionist Built by a Practicing Surgeon',
+  description: 'MedReception AI answers calls, books appointments, and never misses a patient — a physician-built solution for medical practices.',
+  robots: { index: false, follow: false, nocache: true },
   icons: {
     icon: [
       { url: '/favicon.ico' },
       { url: '/favicon.png', type: 'image/png' }
     ],
     apple: '/favicon.png'
-  },
-  openGraph: {
-    title: 'Get MedReception | AI Receptionist Built by a Practicing Surgeon',
-    description: 'MedReception AI answers calls, books appointments, and never misses a patient. A physician-built solution that understands the real workflow of medical practice.',
-    url: 'https://getmedreception.com',
-    siteName: 'Get MedReception',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Get MedReception'
-      }
-    ],
-    locale: 'en_US',
-    type: 'website'
   }
 }
 
@@ -49,20 +34,14 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)] shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="/" className="font-cormorant text-xl font-semibold text-[var(--color-primary)]">
-              Get MedReception
+              MedReception AI
             </a>
             <nav className="hidden md:flex items-center gap-8">
-              <a href="/how-it-works" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
-                How It Works
+              <a href="https://www.medreception.ai" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
+                MedReception.ai
               </a>
-              <a href="/about" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
-                About
-              </a>
-              <a href="/contact" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
-                Contact
-              </a>
-              <a href="/contact" className="ml-8 bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-colors">
-                See How It Works
+              <a href="mailto:paul@getmedreception.com" className="ml-4 bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-colors">
+                Talk to the Founder
               </a>
             </nav>
           </div>
@@ -77,7 +56,7 @@ export default function RootLayout({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
               <div>
                 <a href="/" className="font-cormorant text-xl font-semibold text-white inline-block mb-4">
-                  Get MedReception
+                  MedReception AI
                 </a>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Physician-built AI reception for medical practices that never miss a patient.
@@ -85,35 +64,31 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h3 className="font-semibold text-white mb-4">Quick Links</h3>
+                <h3 className="font-semibold text-white mb-4">Company</h3>
                 <ul className="space-y-3">
                   <li>
-                    <a href="/how-it-works" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
-                      How It Works
+                    <a href="https://www.medreception.ai" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
+                      MedReception.ai
                     </a>
                   </li>
                   <li>
-                    <a href="/about" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/contact" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
-                      Contact
+                    <a href="mailto:paul@getmedreception.com" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
+                      paul@getmedreception.com
                     </a>
                   </li>
                 </ul>
               </div>
 
+              {/* CAN-SPAM: a real physical mailing address + contact must appear on
+                  a page tied to commercial email. Do not remove or placeholder. */}
               <div>
                 <h3 className="font-semibold text-white mb-4">Contact</h3>
-                {/* TODO(optimize): fill real footer NAP before launch */}
-                <ul className="space-y-3 text-sm text-gray-300">
-                  <li>[Address to be added]</li>
-                  <li>[Phone to be added]</li>
-                  <li>[Email to be added]</li>
-                  <li>[Hours to be added]</li>
-                </ul>
+                <address className="not-italic space-y-1 text-sm text-gray-300">
+                  <p>MedReception AI</p>
+                  <p>802 11th Street West</p>
+                  <p>Bradenton, Florida 34205</p>
+                  <p><a href="mailto:paul@getmedreception.com" className="hover:text-[var(--color-accent)] transition-colors">paul@getmedreception.com</a></p>
+                </address>
               </div>
             </div>
 
@@ -122,7 +97,7 @@ export default function RootLayout({
                 This website does not collect protected health information. All clinical intake is handled through a secure patient portal.
               </p>
               <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-                <p>© {new Date().getFullYear()} Get MedReception. All rights reserved.</p>
+                <p>© {new Date().getFullYear()} MedReception AI. All rights reserved.</p>
                 <div className="flex gap-6">
                   <a href="/privacy" className="hover:text-[var(--color-accent)] transition-colors">
                     Privacy Policy
@@ -139,8 +114,6 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
-      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
-
     </html>
   )
 }

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'SMS Terms of Service | Get MedReception',
-  description: 'SMS messaging terms and conditions for Get MedReception services.',
+  title: 'SMS Terms of Service | MedReception AI',
+  description: 'SMS messaging terms and conditions for MedReception AI services.',
 }
 
 export default function SMSTermsPage() {
@@ -35,7 +35,7 @@ export default function SMSTermsPage() {
                 Program Description
               </h2>
               <p className="text-[var(--color-ink)] leading-relaxed mb-4">
-                Get MedReception offers SMS messaging services to provide appointment reminders, service updates, and relevant healthcare administration information to subscribed users.
+                MedReception AI offers SMS messaging services to provide appointment reminders, service updates, and relevant healthcare administration information to subscribed users.
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export default function SMSTermsPage() {
                 Opt-In and Consent
               </h2>
               <p className="text-[var(--color-ink)] leading-relaxed mb-4">
-                By providing your mobile phone number and opting in to receive SMS messages from Get MedReception, you expressly consent to receive automated text messages at the phone number you provided. Consent is not a condition of purchase.
+                By providing your mobile phone number and opting in to receive SMS messages from MedReception AI, you expressly consent to receive automated text messages at the phone number you provided. Consent is not a condition of purchase.
               </p>
               <p className="text-[var(--color-ink)] leading-relaxed mb-4">
                 You may opt-in through web forms, during onboarding, or by texting a keyword to our designated short code or phone number.
@@ -65,7 +65,7 @@ export default function SMSTermsPage() {
                 Message and Data Rates
               </h2>
               <p className="text-[var(--color-ink)] leading-relaxed mb-4">
-                Message and data rates may apply based on your mobile carrier plan. Get MedReception does not charge for SMS messages, but your carrier's standard messaging rates will apply. Please contact your mobile carrier for pricing details.
+                Message and data rates may apply based on your mobile carrier plan. MedReception AI does not charge for SMS messages, but your carrier's standard messaging rates will apply. Please contact your mobile carrier for pricing details.
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function SMSTermsPage() {
                 Terms Updates
               </h2>
               <p className="text-[var(--color-ink)] leading-relaxed mb-4">
-                Get MedReception reserves the right to modify these SMS Terms at any time. Changes will be posted on this page and will become effective immediately. Continued participation in the SMS program after changes constitutes acceptance of the updated terms.
+                MedReception AI reserves the right to modify these SMS Terms at any time. Changes will be posted on this page and will become effective immediately. Continued participation in the SMS program after changes constitutes acceptance of the updated terms.
               </p>
             </div>
 
@@ -144,7 +144,7 @@ export default function SMSTermsPage() {
                 For questions about these SMS Terms, please contact:
               </p>
               <div className="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-xl p-6">
-                <p className="text-[var(--color-ink)] font-semibold mb-2">Get MedReception</p>
+                <p className="text-[var(--color-ink)] font-semibold mb-2">MedReception AI</p>
                 <p className="text-[var(--color-ink)] mb-1">Email: support@getmedreception.com</p>
                 <p className="text-[var(--color-ink)]">Website: getmedreception.com</p>
               </div>
