@@ -116,7 +116,7 @@ export default function PrivacyPage() {
           </p>
           <div className="bg-[var(--color-cream)] p-6 rounded-lg mb-6">
             <p className="text-[var(--color-ink)] font-medium mb-2">MedReception AI</p>
-            <p className="text-[var(--color-muted)]">Email: privacy@getmedreception.com</p>
+            <p className="text-[var(--color-muted)]">Contact us: https://www.medreception.ai/book</p>
             <p className="text-[var(--color-muted)]">Website: getmedreception.com</p>
           </div>
         </div>

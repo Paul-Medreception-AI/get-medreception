@@ -1,8 +1,12 @@
-// Single-page outreach landing. All CTAs go to the founder mailbox — there are no
-// other pages (blog/services/about were removed: this is a cold-outreach domain,
-// not a marketing site). Keep it credible, calm, and self-contained.
+// Single-page outreach landing. CTAs route to the REAL medreception.ai funnel — we
+// deliberately do NOT expose the warmed sending mailbox (paul@) as a clickable link
+// on a public page (scraper spam target). "See How It Works" → the demo page;
+// "Talk to the Founder" → the live booking calendar. This is a cold-outreach domain,
+// not a marketing site: keep it credible, calm, and self-contained.
 
-const MAILTO = 'mailto:paul@getmedreception.com'
+// UTM tags so medreception.ai analytics attributes the visit to THIS outreach domain.
+const DEMO_URL = 'https://www.medreception.ai/demo?utm_source=getmedreception&utm_medium=outreach'
+const BOOK_URL = 'https://www.medreception.ai/book?utm_source=getmedreception&utm_medium=outreach'
 
 export default function Home() {
   return (
@@ -17,10 +21,10 @@ export default function Home() {
             MedReception AI answers calls, books appointments, and never misses a patient. A physician-built solution that understands the real workflow of medical practice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <a href={MAILTO} className="bg-white text-[var(--color-dark)] px-8 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">
+            <a href={DEMO_URL} className="bg-white text-[var(--color-dark)] px-8 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">
               See How It Works
             </a>
-            <a href={MAILTO} className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">
+            <a href={BOOK_URL} className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">
               Talk to the Founder
             </a>
           </div>
@@ -123,21 +127,21 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="font-cormorant text-7xl text-[var(--color-primary)] opacity-60 mb-4">01</div>
+              <div className="font-cormorant text-7xl text-[var(--color-accent)] opacity-90 mb-4">01</div>
               <h3 className="font-cormorant text-2xl mb-4">Quick Integration</h3>
               <p className="text-sm text-white/70 leading-relaxed">
                 We connect MedReception AI to your phone system and calendar in under 48 hours — no complex installs or staff training, just a simple setup that works with your existing infrastructure.
               </p>
             </div>
             <div className="text-center">
-              <div className="font-cormorant text-7xl text-[var(--color-primary)] opacity-60 mb-4">02</div>
+              <div className="font-cormorant text-7xl text-[var(--color-accent)] opacity-90 mb-4">02</div>
               <h3 className="font-cormorant text-2xl mb-4">Custom Configuration</h3>
               <p className="text-sm text-white/70 leading-relaxed">
                 We tailor the AI to your practice&apos;s specific needs, protocols, and scheduling preferences — from call scripts to appointment types, configured to match how your practice actually operates.
               </p>
             </div>
             <div className="text-center">
-              <div className="font-cormorant text-7xl text-[var(--color-primary)] opacity-60 mb-4">03</div>
+              <div className="font-cormorant text-7xl text-[var(--color-accent)] opacity-90 mb-4">03</div>
               <h3 className="font-cormorant text-2xl mb-4">Immediate Results</h3>
               <p className="text-sm text-white/70 leading-relaxed">
                 Your AI receptionist begins handling calls, booking appointments, and capturing patient information right away — monitor performance and adjust settings as your practice evolves.
@@ -153,7 +157,7 @@ export default function Home() {
           <h2 className="font-cormorant text-5xl font-light mb-6">
             AI Receptionist Built by a Practicing Surgeon
           </h2>
-          <a href={MAILTO} className="inline-block bg-white text-[var(--color-dark)] font-bold px-12 py-5 rounded-2xl shadow-2xl hover:-translate-y-1 transition-all text-lg">
+          <a href={BOOK_URL} className="inline-block bg-white text-[var(--color-dark)] font-bold px-12 py-5 rounded-2xl shadow-2xl hover:-translate-y-1 transition-all text-lg">
             Talk to the Founder
           </a>
         </div>

@@ -89,7 +89,7 @@ export default function SMSTermsPage() {
                 For assistance, reply <strong>HELP</strong> to any message or contact us at:
               </p>
               <ul className="list-disc list-inside text-[var(--color-ink)] ml-4 space-y-2">
-                <li>Email: support@getmedreception.com</li>
+                <li>Contact us: https://www.medreception.ai/book</li>
                 <li>Website: getmedreception.com/contact</li>
               </ul>
             </div>
@@ -145,7 +145,7 @@ export default function SMSTermsPage() {
               </p>
               <div className="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-xl p-6">
                 <p className="text-[var(--color-ink)] font-semibold mb-2">MedReception AI</p>
-                <p className="text-[var(--color-ink)] mb-1">Email: support@getmedreception.com</p>
+                <p className="text-[var(--color-ink)] mb-1">Contact us: https://www.medreception.ai/book</p>
                 <p className="text-[var(--color-ink)]">Website: getmedreception.com</p>
               </div>
             </div>

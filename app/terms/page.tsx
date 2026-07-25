@@ -90,7 +90,7 @@ export default function TermsPage() {
             </p>
             <div className="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-lg p-6 mb-8">
               <p className="text-[var(--color-ink)] font-semibold mb-2">MedReception AI</p>
-              <p className="text-[var(--color-muted)]">Email: info@getmedreception.com</p>
+              <p className="text-[var(--color-muted)]">Contact us: https://www.medreception.ai/book</p>
               <p className="text-[var(--color-muted)]">Website: getmedreception.com</p>
             </div>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import './globals.css'
 
@@ -33,14 +34,21 @@ export default function RootLayout({
       <body className="font-[family-name:var(--font-dm-sans)] bg-[var(--color-cream)] text-[var(--color-ink)] antialiased">
         <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)] shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="/" className="font-cormorant text-xl font-semibold text-[var(--color-primary)]">
-              MedReception AI
+            <a href="/" className="flex items-center" aria-label="MedReception AI">
+              <Image
+                src="/medreception-logo.png"
+                alt="MedReception AI"
+                width={356}
+                height={40}
+                priority
+                className="h-9 w-auto sm:h-10"
+              />
             </a>
             <nav className="hidden md:flex items-center gap-8">
               <a href="https://www.medreception.ai" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-primary)] transition-colors">
                 MedReception.ai
               </a>
-              <a href="mailto:paul@getmedreception.com" className="ml-4 bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-colors">
+              <a href="https://www.medreception.ai/book?utm_source=getmedreception&utm_medium=outreach" className="ml-4 bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition-colors">
                 Talk to the Founder
               </a>
             </nav>
@@ -55,8 +63,14 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
               <div>
-                <a href="/" className="font-cormorant text-xl font-semibold text-white inline-block mb-4">
-                  MedReception AI
+                <a href="/" className="inline-block mb-4" aria-label="MedReception AI">
+                  <Image
+                    src="/medreception-logo-light.png"
+                    alt="MedReception AI"
+                    width={182}
+                    height={32}
+                    className="h-8 w-auto"
+                  />
                 </a>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Physician-built AI reception for medical practices that never miss a patient.
@@ -72,8 +86,8 @@ export default function RootLayout({
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:paul@getmedreception.com" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
-                      paul@getmedreception.com
+                    <a href="https://www.medreception.ai/book?utm_source=getmedreception&utm_medium=outreach" className="text-sm text-gray-300 hover:text-[var(--color-accent)] transition-colors">
+                      Book a demo
                     </a>
                   </li>
                 </ul>
@@ -83,11 +97,13 @@ export default function RootLayout({
                   a page tied to commercial email. Do not remove or placeholder. */}
               <div>
                 <h3 className="font-semibold text-white mb-4">Contact</h3>
+                {/* No email on the page — CAN-SPAM requires a physical postal
+                    address (present below), not an email. Omitting it gives
+                    scrapers nothing to harvest against the warmed sending mailbox. */}
                 <address className="not-italic space-y-1 text-sm text-gray-300">
                   <p>MedReception AI</p>
                   <p>802 11th Street West</p>
                   <p>Bradenton, Florida 34205</p>
-                  <p><a href="mailto:paul@getmedreception.com" className="hover:text-[var(--color-accent)] transition-colors">paul@getmedreception.com</a></p>
                 </address>
               </div>
             </div>

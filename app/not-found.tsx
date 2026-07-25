@@ -21,10 +21,10 @@ export default function NotFound() {
             Go Home
           </Link>
           <a
-            href="mailto:paul@getmedreception.com"
+            href="https://www.medreception.ai/book?utm_source=getmedreception&utm_medium=outreach"
             className="bg-white hover:bg-[var(--color-light)] text-[var(--color-primary)] px-8 py-3 rounded-lg font-semibold border border-[var(--color-border)] transition-colors"
           >
-            Contact Us
+            Book a Demo
           </a>
         </div>
       </div>
